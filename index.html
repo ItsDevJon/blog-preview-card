@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <link rel="stylesheet" href="./main.css">
+
+    <title>Frontend Mentor | Blog preview card</title>
+
 </head>
-<body>
 
-  Learning
+<body class="h-dvh flex flex-col justify-center items-center gap-10 m-0 font-(family-name:--bp-font-family) bg-(--bp-color-yellow)">
+    <main>
+        <article class="group max-w-[384px] flex flex-col space-y-6 p-6 m-6 border rounded-[20px] shadow-[8px_8px_0px_0px_#000] hover:shadow-[16px_16px_0px_0px_#000] transition-shadow text-(--bp-color-gray-950) bg-(--bp-color-white) hover:cursor-pointer">
+            
+            <!-- Card image -->
+            <img 
+                src="assets/images/illustration-article.svg" 
+                alt="Blog article image" 
+                class="rounded-[10px]"
+            />
 
-  Published 21 Dec 2023
+            <!-- Card content -->
+            <div class="flex flex-col space-y-3">
 
-  HTML & CSS foundations
+                <!-- Category -->
+                <div class="w-fit px-3 py-1 rounded-sm bg-(--bp-color-yellow)">
+                    <span class="text-preset-3-bold">Learning</span>
+                </div>
+                
+                <!-- Published date -->
+                <span class="text-preset-3">
+                    Published 21 Dec 2023
+                </span>
+                
+                <!-- Title -->
+                <h2 class="text-preset-1 group-hover:text-(--bp-color-yellow)">
+                    HTML & CSS foundations
+                </h2>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
+                <!-- Description -->
+                <p class="text-preset-2 text-(--bp-color-gray-500)">
+                    These languages are the backbone of every website, defining structure, content, and presentation.
+                </p>
+            </div>
 
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+            <!-- Author information -->
+            <div class="flex gap-3 items-center">
+                <img 
+                    src="assets/images/image-avatar.webp" 
+                    alt="Avatar of Greg Hooper" 
+                    class="w-[32px]"
+                />
+                <span class="text-preset-3-bold">Greg Hooper</span>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+    </footer>
 </body>
+
 </html>

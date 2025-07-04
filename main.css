@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+    --bp-color-white: #FFFFFF;
+    --bp-color-yellow: #F4D04E;
+    --bp-color-gray-950: #111111;
+    --bp-color-gray-500: #6B6B6B;
+
+    --bp-font-family: 'Figtree', sans-serif;
+
+    --bp-text-preset-1-font-size: 1.5rem;
+    --bp-text-preset-1-font-weight: 700;
+    --bp-text-preset-1-line-height: 150%;
+
+    --bp-text-preset-2-font-size: 1rem;
+    --bp-text-preset-2-font-weight: 400;
+    --bp-text-preset-2-line-height: 150%;
+
+    --bp-text-preset-3-font-size: 0.875rem;
+    --bp-text-preset-3-font-weight: 400;
+    --bp-text-preset-3-line-height: 150%;
+
+    --bp-text-preset-3-bold-font-size: 0.875rem;
+    --bp-text-preset-3-bold-font-weight: 700;
+    --bp-text-preset-3-bold-line-height: 150%;
+}
+
+.text-preset-1 {
+    font-size: var(--bp-text-preset-1-font-size);
+    font-weight: var(--bp-text-preset-1-font-weight);
+    line-height: var(--bp-text-preset-1-line-height);
+}
+
+.text-preset-2 {
+    font-size: var(--bp-text-preset-2-font-size);
+    font-weight: var(--bp-text-preset-2-font-weight);
+    line-height: var(--bp-text-preset-2-line-height);
+}
+
+.text-preset-3 {
+    font-size: var(--bp-text-preset-3-font-size);
+    font-weight: var(--bp-text-preset-3-font-weight);
+    line-height: var(--bp-text-preset-3-line-height);
+}
+
+.text-preset-3-bold {
+    font-size: var(--bp-text-preset-3-bold-font-size);
+    font-weight: var(--bp-text-preset-3-bold-font-weight);
+    line-height: var(--bp-text-preset-3-bold-line-height);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
