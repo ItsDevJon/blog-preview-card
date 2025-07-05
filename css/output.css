@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --spacing: 0.25rem;
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --radius-sm: 0.25rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -249,9 +250,9 @@
   .font-\(family-name\:--bp-font-family\) {
     font-family: var(--bp-font-family);
   }
-  .font-bold\! {
-    --tw-font-weight: var(--font-weight-bold) !important;
-    font-weight: var(--font-weight-bold) !important;
+  .font-extrabold\! {
+    --tw-font-weight: var(--font-weight-extrabold) !important;
+    font-weight: var(--font-weight-extrabold) !important;
   }
   .text-\(--bp-color-gray-500\) {
     color: var(--bp-color-gray-500);
@@ -302,7 +303,7 @@
   --bp-color-gray-500: #6B6B6B;
   --bp-font-family: 'Figtree', sans-serif;
   --bp-text-preset-1-font-size: 1.5rem;
-  --bp-text-preset-1-font-weight: 700;
+  --bp-text-preset-1-font-weight: 800;
   --bp-text-preset-1-line-height: 150%;
   --bp-text-preset-2-font-size: 1rem;
   --bp-text-preset-2-font-weight: 400;
